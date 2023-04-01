@@ -1,4 +1,4 @@
-#include <iostream> // loads prebuilt libraries, io stream is for printing for console
+#include <iostream> // loads prebuilt libraries the iostream library, io stream is for printing for console
 
 int main(){ // Main function, starting point of c++ program or entry point of program
     std::cout << "Hello World in C++20!" << std::endl; // print statement, cannot do without iostrem, endl means newline

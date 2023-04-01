@@ -29,7 +29,7 @@
         "-fansi-escape-codes",
         "-g",
         "-std=c++20",
-        "${workspaceFolder}\\*.cpp",
+        "${fileDirname}\\*.cpp",
         "-o",
         "${fileDirname}\\${fileBasenameNoExtension}.exe"
       ],
