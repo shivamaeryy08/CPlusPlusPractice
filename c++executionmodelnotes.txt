@@ -1,0 +1,17 @@
+Program is compiled into binary executable which is not in readable format
+
+binary format is more understood by the cpu, the cpu loads and handles the program
+
+RAM is random access memory not memory of hard drive, binary file is loaded into RAM
+
+only then the cpu will run the program statement by statement
+
+must allocate space for integers
+
+for declarations it just stores some random value
+
+funciton and its params lives in a different space then variables in ram, cpu knows return address of a function so it
+
+knows where to come back after running function, cpu optimizes fx cals and odenst need to jumpo to perform them, can 
+
+do them inline at a memory address since it knows the memory address of the fx declaration

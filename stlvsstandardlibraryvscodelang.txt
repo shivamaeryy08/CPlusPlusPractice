@@ -1,0 +1,12 @@
+C++ CORE LANGUAGE
+    - Basic building block 
+    - define variables, how to use functions
+    - rules of above, primitive types
+
+STANDARD library
+    - Ready to use components 
+    - This is things like iostream string etc. v common libraries
+
+STL FEATURE
+    - part of standard library, collection of container types containers are collection typers such as vectors
+    - thhings that let us navigate through a container = iterator
