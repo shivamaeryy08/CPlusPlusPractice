@@ -1,5 +1,14 @@
 #include <iostream>
 
+
+const int val1 {23}; // const can be eval at compile time if its value is constant
+constinit int age = 88;
+constexpr int val2 {val1}; // can assign const since const is actually a const expr
+const constinit int age1 {val1};
+constinit int age2 {age1};
+
+
+
 int main () {
 // const -> can intilizae but cant change after
 
@@ -31,8 +40,36 @@ const unsigned long long number_of_people_in_world {8'000'000'000ULL};
 // could still be evaled at run time
 // use for big computations 
 // so that computation can be done only once
+// constexpr is also const
+// cannot use run time resutls to initialize compile time things like constexpr cannot be set
+// equal to a run time result such as myname
 
 constexpr double Pi_times3 = 3.14 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3;
+
+// can use static_assert(smt == smt) to check a condition at compile time and give compiler error if it is untrue
+
+// cant use non constexprs in static_assert, it is only for compile time check
+
+
+/*
+CONST INIT says variable should be initialize at constant time
+
+get compiler error if you do this wiwth something that cant be evaluated at compile time
+
+say that varaibe shoud be const intiailized
+
+only for varaibles outside scope of main
+
+must be initilaized wit const or literals
+
+can combine const and constint but cant combine const and constexpr
+
+const init != const it just means compiler intiialzied at compile time can modify it
+
+meantfor prior to main
+*/
+
+
 
 
 }
