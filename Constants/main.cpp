@@ -52,7 +52,7 @@ constexpr double Pi_times3 = 3.14 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3;
 
 
 /*
-CONST INIT says variable should be initialize at constant time
+CONST INIT says variable should be initialize at compile time
 
 get compiler error if you do this wiwth something that cant be evaluated at compile time
 
@@ -69,7 +69,7 @@ const init != const it just means compiler intiialzied at compile time can modif
 meantfor prior to main
 */
 
-
+age = 4; // can modify a constinit variable has to be in main cannot declare constinit in main
 
 
 }
