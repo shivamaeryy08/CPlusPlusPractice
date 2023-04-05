@@ -8,7 +8,7 @@ void randomFunction() {
 }
 int main () {
  // in c++ we can define nested scope such as below
- // in ++ we can redeclare global variuables with name
+ // in c++ we can redeclare global variuables with name
  {
     std::string favorite_game {"Sekiro"}; // this var only lives in this nested block
 }
