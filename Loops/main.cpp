@@ -21,8 +21,10 @@ int main () {
     std::cout << "result should be 14: " << result << std::endl;
     // Range based for loop
     int array_values [] {1,2,3,4};
-    for (auto value: array_values) { // only with collection types like array right side of : is the collection type
-        std::cout << value << std::endl;
+    for (int multiplier{4};auto value: array_values) { // only with collection types like array right side of : is the collection type
+        std::cout << multiplier*value << std::endl;
     }
+    // note that std::cout can greatly decrease speed of program if you loop it alywas remove std::cout
+    // before shipping app
 
 }
