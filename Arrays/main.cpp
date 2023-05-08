@@ -1,5 +1,5 @@
 #include <iostream>
- 
+#include <string> 
 // arrays are a way to set up a collection, so its a collection of items under one var name
 
 // in memory its all 0's and 1's each row so to speak would be one item of the array
@@ -44,6 +44,21 @@ bool is_sorted(int numbers[], unsigned int collection_size) {
     i++;
    }
    return is_sorted;
+}
+
+void common_elements(int array_1[], int array_2[], int array1size, int array2size) {
+    std::string list_common_numbers{""};
+    int count{};
+    for (int i {}; i < array1size; ++i) {
+        for (int j{}; j < array2size; ++j) {
+            if (array_1[i] == array_2[j]) {
+                list_common_numbers += (std::to_string(array_1[i]) + " "); 
+                count++;
+                }
+        }
+    }
+    if (list_common_numbers == "") std::cout << "There are 0 common elements";
+    else std::cout << "There are " << count << " common elements they are : " << list_common_numbers;
 }
 
 
