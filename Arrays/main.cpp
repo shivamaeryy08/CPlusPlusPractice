@@ -24,11 +24,29 @@ void unique_numbers(int numbers[], unsigned int collection_size) {
  
     }
     int unique_numbers_count = unique_numbers_index;
-    std::cout << "The collection contains " << unique_numbers_count << " unique numbers, they are : ";
+    std::cout << "The collection contains " << unique_numbers_count << " unique numbers, they are : " << std::endl;
     for (int i{}; i < unique_numbers_count; ++i) std::cout << unique_numbers[i] << " ";
          
 
 }
+
+void size_of_array_random_array() {
+    int random_array[] {1,2,3,4}; // std::size was introduced in c++ 17
+    std::cout << "Size of provided array: " << std::size(random_array) << std::endl; // use std:size to get size of array
+
+}
+
+bool is_sorted(int numbers[], unsigned int collection_size) {
+   bool is_sorted = true;
+   int i = 0;
+   while (i < collection_size - 1) {
+    if (numbers[i] > numbers[i+1]) is_sorted = false;
+    i++;
+   }
+   return is_sorted;
+}
+
+
 int main () {
     // use square brackets to access items starting from 0
     int scores[10]; // declare an array, says scores is an array storing 10 integers
@@ -45,6 +63,20 @@ int main () {
     // ARRAYS STORE ELEMENTS OF THE SAME TYPE NEVER DIFFERENT TYPE
     int numbers[9] {7,5,21,3,8,2,21,4,3};
     unique_numbers(numbers, 9);
+    size_of_array_random_array();
+    //Arrays of charadcters
+    char name[] {'X','Y','L','A', '\0'};
+    // Can directly print out a character array, make sure to make it a c string
+    // '\0' is the null termination string, necessary to clarify to std::cout where to stop printing
+    std::cout << "Name: " << name << std::endl;
+    // Can define string literal c strings, c++ will auto add null terminator char
+    char message2 [] {"Hello"}
+    // an implicit \0 is added to end of string making it a c string 
+    // if no null termination character, garabge values may be printed
+
+
+
+
 
 
 }
