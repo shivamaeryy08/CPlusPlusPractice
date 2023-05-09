@@ -30,6 +30,10 @@ std::cout << "Address: " << p_int_var << " Value: " << *p_int_var << std::endl;
 int_var = 400;
 std::cout << "Address: " << p_int_var << " Value: " << *p_int_var << std::endl;
 
+*p_int_var = 500;
+
+std::cout << "Address: " << p_int_var << " Value: " << *p_int_var << std::endl;
+
 // pointer to char
 
 char char_var {'A'};
@@ -48,6 +52,8 @@ std::cout << "Value of char_ptr is: " << *char_ptr << std::endl;
 const char *message {"Hello World"};
 
 std::cout << "Message ptr value: " << *message << std::endl;
+
+//if you want to modify the string then use a normal char array and modify it
 
 
 }
