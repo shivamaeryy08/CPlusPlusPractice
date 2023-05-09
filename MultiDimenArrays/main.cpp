@@ -45,8 +45,22 @@ int main () {
         }
         }
     }
+    std::cout << std::endl;
     // when dlecaring an multi dimensiaonl array can omit number of rows
     
-
+    // multi dimensiaonl char array
+    const int number_col {15};
+    char name[][number_col] { // the names are small enogh for null terminated character to be inserted
+    // but if a name is 15 char's then could be garbage output
+        {'S','h', 'i', 'v','a','m'},
+        {'J','o','h','n'},
+    };
+    
+    for (int i{}; i < std::size(name); ++i) std::cout << "Name: " << name[i] << std::endl;
+     // better way to do it is using c string literals such as below, null char insterted automaitcally
+     char name2[][number_col] {
+        "Shivam",
+        "John",
+     };
     return 0;
 }
