@@ -9,6 +9,7 @@ int main () {
     std::cout << "Enter your name: " << std::endl;
     std::cin.getline(name, name_max_length);
     unsigned const int max_len_prediction{100};
+    // Not optmial as we are forcing a specific size of char length use array of pointers to char instead
     char predictions[][max_len_prediction] {
         "a lot of kinds running in the backyard!",
         "a lot of empty beer bootles on your work table.",
